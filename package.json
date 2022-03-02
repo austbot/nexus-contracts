@@ -1,0 +1,29 @@
+{
+  "name": "nexus-contracts",
+  "version": "1.0.0",
+  "description": "Nexus DAO's smart contracts.",
+  "repository": "git@github.com:NexusDAODeFi/nexus-contracts.git",
+  "author": "Zeus0x <99280960+zeus0x@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "deploy:localhost": "npx hardhat run --network localhost scripts/deploy.js",
+    "deploy:mainnet": "npx hardhat run --network mainnet scripts/deploy.js",
+    "verify": "npx hardhat run --network mainnet scripts/verify.js"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@traderjoe-xyz/core": "^2.3.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.4",
+    "hardhat": "^2.9.0",
+    "prettier": "^2.5.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "typescript": "^4.6.2"
+  }
+}
